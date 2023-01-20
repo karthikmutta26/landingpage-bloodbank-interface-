@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: url("https://img.freepik.com/free-photo/red-black-brush-stroke-banner-background-perfect-canva_1361-3597.jpg?w=1060&t=st=1673966961~exp=1673967561~hmac=7796854611b946be7acd254ca151827e3da5d8aced900dd0e92c3c7f80cb148c");
+       background-repeat: no-repeat;
+        background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  width: 25%;
+  text-align: center;
+  color:red ;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Poppins';
+}
+
+nav .menu {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+  font-size: 20px;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+.box {
+      transform: translate(10%, 0%);
+      width: 600px;
+      padding: 40px;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      font-size: 15px;
+      background-color: red;
+      color: white;
+    }
+    .box1 {
+      transform: translate(130%, -100%);
+      width: 600px;
+      padding: 40px;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      font-size: 15px;
+      background-color: red;
+      color: white;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+
+<header>
+ 
+<nav>
+  <div class="logo"> <h1 style="font-size: 20px;">BLOOD BANK</h1> </div>
+  <div class="menu">
+    <a href="#">HOME</a>
+    <a href="bloodbank.html">BLOOD BANK</a>
+    <a href="about.html">ABOUT</a>
+    <a href="campaign.html">CAMPAIGN DETAILS</a>
+    <a href="admin.html">ADMIN</a>
+
+  </div>
+</nav>
+      <div class="slideshow-container">
+
+      <div class="mySlides fade">
+            <img src="https://www.sriramakrishnahospital.com/wp-content/uploads/2021/06/Blood-Donation-1.jpg" style="width:100%; height: 636px;">
+      </div>
+      <div class="mySlides fade">
+       
+        <img src="https://cdn.pixabay.com/photo/2016/11/10/02/47/blood-1813410_960_720.jpg" style="width:100%; height: 636px;">
+      </div>
+      <div class="mySlides fade">
+        <img src="https://www.kelsey-seybold.com/-/media/Project/KelseySeybold/KelseySeyboldClinic/Images/Blog-Images/donating-blood-banner.jpg?h=592&iar=0&w=1052&hash=CA207919D3D4DC295B5B717045C872E9" style="width:100%; height: 636px;">
+      </div>
+            <div class="mySlides fade">
+        <img src="https://slidemodel.com/wp-content/uploads/21064-01-blood-donation-powerpoint-template-1.jpg" style="width:100%; height: 636px;">
+      </div>
+    </div>
+      <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+</header>
+       
+        <div style="background-color: red;">
+          <center><img src="https://competitiveindia.com/wp-content/uploads/2019/02/blood-group-1200x720.jpg" width="50%" alt="100px"></center>
+        </div>
+        
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3><span>BLOOD BANK</span></h3>
+
+        <p class="footer-links">
+          <a href="landing.html">HOME</a>
+        
+          <a href="#">BLOOD BANK</a>
+        
+          <a href="#">ABOUT</a>
+          
+          <a href="#">CAMPAIGN DETAILS</a>
+          
+          <a href="#">ADMIN</a>
+        </p>
+
+        <p class="footer-company-name">BloodBank © 2023</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p style="font-size:20px">Sri Vasavi Engineering College,pedatadepalli</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="support@company.com">bloodbank@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about" style="font-size:18px">
+          <span>About Blood Bank</span>
+          Blood bank is a place where blood bag that is collected from blood donation events is stored in one place.
+        </p>
+
+      </div>
+
+    </footer>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+
+</body>
+</html>
